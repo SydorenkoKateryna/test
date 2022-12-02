@@ -5,9 +5,12 @@
 
 .foot-nav {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   &::after {
     content: '';
@@ -23,18 +26,26 @@
 }
 
 .foot-nav__item {
-  &:first-child {
+  &:nth-child(2n+1) {
     margin-right: 81px;
   }
 
-  &:nth-child(3) {
-    margin-right: 141px;
-    margin-left: 141px;
+  &:nth-child(2) {
+    margin-right: 323px;
   }
+}
 
-  &:nth-child(4) {
-    margin-right: 81px;
-  }
+.foot-nav__logo {
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+
+  color: $accentColor;
+}
+
+.logo {
+  fill: currentColor;
 }
 
 .foot-nav__link {
@@ -50,14 +61,9 @@
   }
 }
 
-.foot-nav__logo {
-  fill: $accentColor;
-}
-
 .socials {
   display: flex;
   justify-content: center;
-  // margin-top: 55px;
   margin-top: 98px;
   margin-bottom: 72px;
 
