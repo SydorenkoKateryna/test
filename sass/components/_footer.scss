@@ -5,15 +5,16 @@
 
 .foot-nav {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &__list {
     display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: -43px;
     left: 50%;
@@ -25,27 +26,20 @@
   }
 }
 
-.foot-nav__item {
-  &:nth-child(2n+1) {
-    margin-right: 81px;
-  }
-
-  &:nth-child(2) {
-    margin-right: 323px;
-  }
+.foot-nav__item + .foot-nav__item {
+  margin-left: 81px;
 }
 
 .foot-nav__logo {
-  position: absolute;
-  top:50%;
-  left: 50%;
-  transform: translateY(-50%) translateX(-50%);
-
-  color: $accentColor;
+  margin-left: 141px;
+  margin-right: 141px;
 }
 
 .logo {
-  fill: currentColor;
+  font-family: Homemade Apple;
+  font-size: 18px;
+  line-height: 2.1;
+  color: $accentColor;
 }
 
 .foot-nav__link {

@@ -50,11 +50,12 @@ body {
 
 .foot-nav {
   position: relative;
-}
-.foot-nav__list {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.foot-nav__list {
+  display: flex;
 }
 .foot-nav::after {
   content: "";
@@ -68,23 +69,20 @@ body {
   background-color: #000;
 }
 
-.foot-nav__item:nth-child(2n+1) {
-  margin-right: 81px;
-}
-.foot-nav__item:nth-child(2) {
-  margin-right: 323px;
+.foot-nav__item + .foot-nav__item {
+  margin-left: 81px;
 }
 
 .foot-nav__logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%) translateX(-50%);
-  color: #f7941e;
+  margin-left: 141px;
+  margin-right: 141px;
 }
 
 .logo {
-  fill: currentColor;
+  font-family: Homemade Apple;
+  font-size: 18px;
+  line-height: 2.1;
+  color: #f7941e;
 }
 
 .foot-nav__link {
