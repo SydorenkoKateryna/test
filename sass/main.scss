@@ -1,7 +1,8 @@
-// Vars
-@import './utils/vars';
 // Base
 @import './base/reset';
 @import './base/common';
-// Footer
-@import './components/footer';
+// Utils
+@import './utils/visually-hidden';
+// Components
+@import './components/contacts';
+@import './components/modal-map';
