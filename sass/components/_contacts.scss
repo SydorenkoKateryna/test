@@ -259,14 +259,13 @@ footer {
   font-weight: 600;
   font-size: 14px;
   line-height: calc(18 / 14);
+  color: #131313;
 }
 
 .contacts-button--dark {
   border-color: #f8d24e;
   background-color: #f8d24e;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
     border-color: #0a8817;
@@ -284,8 +283,7 @@ footer {
 .contacts-button--light {
   border-color: #f8d24e;
   background-color: transparent;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
     border-color: #0a8817;

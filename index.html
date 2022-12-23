@@ -158,9 +158,59 @@
               <button
                 type="button"
                 class="button contacts-button contacts-button--dark"
+                data-modal-open
               >
                 Our Locations
               </button>
+
+              <!-- Backdrop + modal-map (in a separate file!!!) -->
+              <div class="backdrop backdrop--hidden" data-modal>
+                <div class="contacts__modal-map modal-map">
+                  <button class="modal-close-btn" data-modal-close>
+                    <svg class="modal-close-btn__icon" width="14" height="14">
+                      <use href="./images/icons.svg#close"></use>
+                    </svg>
+                  </button>
+
+                  <div class="modal-map__meta">
+                    <strong class="modal-map__text">Our Locations</strong>
+                  </div>
+
+                  <div class="modal-map__wrapper">
+                    <picture>
+                      <source
+                        media="(max-width: 767.98px)"
+                        type="image/jpg"
+                        srcset="
+                          ./images/img-224@1x.jpg 1x,
+                          ./images/img-224@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 768px)"
+                        type="image/jpg"
+                        srcset="
+                          ./images/img-448@1x.jpg 1x,
+                          ./images/img-448@2x.jpg 2x
+                        "
+                      />
+                      <img
+                        class="modal-map__img"
+                        src="./images/img-224@1x.jpg"
+                        alt="Map"
+                      />
+                    </picture>
+                  </div>
+
+                  <a
+                    href="https://goo.gl/maps/YGEp32zduYWbFXs4A"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="link modal-map__link"
+                    >Open map</a
+                  >
+                </div>
+              </div>
             </li>
 
             <li class="contacts__modal-item">
@@ -179,5 +229,7 @@
     <footer class="footer">
       <div class="container">One more time Hello:)</div>
     </footer>
+
+    <script src="./js/modal-map.js"></script>
   </body>
 </html>
