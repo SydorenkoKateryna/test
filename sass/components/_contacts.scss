@@ -30,19 +30,16 @@ footer {
 }
 
 .contacts__list {
-  // width: 100%;
   margin-left: auto;
   margin-right: auto;
-  // margin-bottom: 20px;
 
   @media screen and (max-width: 767.98px) {
-    max-width: 320px;
+    max-width: 368px;
   }
 
   @media screen and (min-width: 768px) {
     display: flex;
     margin: -8px;
-    // margin-bottom: 40px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -51,7 +48,6 @@ footer {
 }
 
 .contacts__item {
-  // width: 100%;
   background-color: #fcfcfc;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
@@ -90,12 +86,20 @@ footer {
     font-size: 14px;
   }
 
+  @media screen and (min-width: 1200px) {
+    padding-left: 40px;
+    padding-right: 40px;
+
+    font-size: 16px;
+  }
+
   &__title {
     display: inline-block;
+    min-width: 80px;
     padding-top: 4px;
     padding-bottom: 4px;
-    padding-left: 22px;
-    padding-right: 22px;
+    padding-left: 21px;
+    padding-right: 21px;
     margin-bottom: 20px;
 
     border-radius: 4px;
@@ -112,6 +116,19 @@ footer {
       border-radius: 6px;
       font-size: 16px;
     }
+
+    @media screen and (min-width: 1200px) {
+      min-width: 76px;
+      padding-left: 14px;
+      padding-right: 14px;
+    }
+  }
+}
+
+.item-contacts__title--wider {
+  @media screen and (min-width: 1200px) {
+    padding-left: 16px;
+    padding-right: 15px;
   }
 }
 
@@ -145,7 +162,7 @@ footer {
   & + & {
     margin-top: 8px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
       margin-top: 12px;
     }
   }
@@ -154,6 +171,10 @@ footer {
 .datetime__item {
   & + & {
     margin-top: 8px;
+
+    @media screen and (min-width: 1200px) {
+      margin-top: 12px;
+    }
   }
 }
 
@@ -203,6 +224,10 @@ footer {
     justify-content: center;
     margin-top: 40px;
   }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 60px;
+  }
 }
 
 .contacts__modal-item {
@@ -218,19 +243,22 @@ footer {
 
 // contacts-button
 .contacts-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   min-width: 196px;
   padding-top: 12px;
   padding-bottom: 12px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 12px;
+  padding-right: 12px;
 
   border: 2px solid transparent;
   border-radius: 10px;
 
+  font-family: inherit;
   font-weight: 600;
   font-size: 14px;
   line-height: calc(18 / 14);
-  text-align: center;
 }
 
 .contacts-button--dark {

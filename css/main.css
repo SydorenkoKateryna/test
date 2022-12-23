@@ -118,7 +118,7 @@ footer {
 }
 @media screen and (max-width: 767.98px) {
   .contacts__list {
-    max-width: 320px;
+    max-width: 368px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -172,12 +172,20 @@ footer {
     font-size: 14px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .item-contacts {
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 16px;
+  }
+}
 .item-contacts__title {
   display: inline-block;
+  min-width: 80px;
   padding-top: 4px;
   padding-bottom: 4px;
-  padding-left: 22px;
-  padding-right: 22px;
+  padding-left: 21px;
+  padding-right: 21px;
   margin-bottom: 20px;
   border-radius: 4px;
   line-height: 1.2;
@@ -192,6 +200,20 @@ footer {
     padding-right: 10px;
     border-radius: 6px;
     font-size: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .item-contacts__title {
+    min-width: 76px;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .item-contacts__title--wider {
+    padding-left: 16px;
+    padding-right: 15px;
   }
 }
 
@@ -225,7 +247,7 @@ footer {
 .location__text + .location__text {
   margin-top: 8px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .location__text + .location__text {
     margin-top: 12px;
   }
@@ -233,6 +255,11 @@ footer {
 
 .datetime__item + .datetime__item {
   margin-top: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .datetime__item + .datetime__item {
+    margin-top: 12px;
+  }
 }
 
 .datetime__text {
@@ -277,6 +304,11 @@ footer {
     margin-top: 40px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .contacts__modal-list {
+    margin-top: 60px;
+  }
+}
 
 .contacts__modal-item + .contacts__modal-item {
   margin-top: 16px;
@@ -289,17 +321,20 @@ footer {
 }
 
 .contacts-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   min-width: 196px;
   padding-top: 12px;
   padding-bottom: 12px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 12px;
+  padding-right: 12px;
   border: 2px solid transparent;
   border-radius: 10px;
+  font-family: inherit;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.2857142857;
-  text-align: center;
 }
 
 .contacts-button--dark {
