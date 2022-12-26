@@ -11,9 +11,15 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Seymour+One&display=swap"
       rel="stylesheet"
     />
+    <!-- Animation -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="stylesheet" href="./dist/css/main.min.css" />
   </head>
@@ -25,7 +31,7 @@
           <h2 class="visually-hidden">Contacts</h2>
           <ul class="contacts__list list">
             <li class="contacts__item item-contacts">
-              <p class="item-contacts__title">CAFE</p>
+              <p class="item-contacts__title animate__animated animate__fadeInRightBig">CAFE</p>
 
               <div class="item-contacts__location location">
                 <p class="location__text">Chicago</p>
@@ -153,76 +159,6 @@
             </li>
           </ul>
 
-          <!-- Backdrop + modal-map (in a separate file!!!) -->
-          <!-- <ul class="contacts__modal-list list">
-            <li class="contacts__modal-item">
-              <button
-                type="button"
-                class="button contacts-button contacts-button--dark"
-                data-modal-open
-              >
-                Our Locations
-              </button>
-
-              <div class="backdrop backdrop--hidden" data-modal>
-                <div class="contacts__modal-map modal-map">
-                  <button class="modal-close-btn" data-modal-close>
-                    <svg class="modal-close-btn__icon" width="14" height="14">
-                      <use href="./images/icons.svg#close"></use>
-                    </svg>
-                  </button>
-
-                  <div class="modal-map__meta">
-                    <strong class="modal-map__text">Our Locations</strong>
-                  </div>
-
-                  <div class="modal-map__wrapper">
-                    <picture>
-                      <source
-                        media="(max-width: 767.98px)"
-                        type="image/jpg"
-                        srcset="
-                          ./images/img-1@1x.jpg 1x,
-                          ./images/img-1@2x.jpg 2x
-                        "
-                      />
-                      <source
-                        media="(min-width: 768px)"
-                        type="image/jpg"
-                        srcset="
-                          ./images/img-2@1x.jpg 1x,
-                          ./images/img-2@2x.jpg 2x
-                        "
-                      />
-                      <img
-                        class="modal-map__img"
-                        src="./images/img-1@1x.jpg"
-                        alt="Map"
-                      />
-                    </picture>
-                  </div>
-
-                  <a
-                    href="https://goo.gl/maps/YGEp32zduYWbFXs4A"
-                    target="_blank"
-                    rel="noopener noreferrer nofollow"
-                    class="link modal-map__link"
-                    >Open map</a
-                  >
-                </div>
-              </div>
-            </li>
-
-            <li class="contacts__modal-item">
-              <button
-                type="button"
-                class="button contacts-button contacts-button--light"
-              >
-                Franchise
-              </button>
-            </li>
-          </ul> -->
-
           <ul class="contacts__modal-list list">
             <li class="contacts__modal-item">
               <button
@@ -233,6 +169,7 @@
                 Our Locations
               </button>
 
+              <!-- Backdrop + modal-map (in a separate file!!!) -->
               <div class="backdrop backdrop--hidden" data-modal>
                 <div class="contacts__modal-map modal-map">
                   <button class="modal-close-btn" data-modal-close>
@@ -300,6 +237,5 @@
     </footer>
 
     <script src="./js/modal-map.js"></script>
-    <script src="./js/modal.js"></script>
   </body>
 </html>
