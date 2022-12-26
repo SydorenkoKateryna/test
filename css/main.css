@@ -392,7 +392,8 @@ footer {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 87.5vw;
+  max-width: 280px;
+  width: 100%;
   min-height: 365px;
   margin-left: auto;
   margin-right: auto;
@@ -405,12 +406,6 @@ footer {
   border: 2px solid #f8d24e;
   border-radius: 10px;
   background-color: #fcfcfc;
-}
-@media screen and (min-width: 480px) {
-  .contacts__modal-map {
-    max-width: 440px;
-    width: 100%;
-  }
 }
 @media screen and (min-width: 768px) {
   .contacts__modal-map {
@@ -500,6 +495,7 @@ footer {
   line-height: 1.25;
   color: #131313;
   background-color: #f8d24e;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .modal-map__link {
@@ -507,4 +503,14 @@ footer {
     font-size: 14px;
     line-height: 1.2142857143;
   }
+}
+.modal-map__link:hover {
+  border-color: #0a8817;
+  background-color: #0a8817;
+}
+.modal-map__link:focus {
+  border-color: #0a8817;
+  background-color: #0a8817;
+  color: #ffffff;
+  outline: transparent;
 }/*# sourceMappingURL=main.css.map */
